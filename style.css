@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #111;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  text-align: center;
+}
+
+.circle {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  background: radial-gradient(circle, #6a2cff, #4a00e0);
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center {
+  width: 130px;
+  height: 130px;
+  background: #222;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+  z-index: 2;
+}
+
+.bars {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.bar {
+  position: absolute;
+  width: 6px;
+  height: 18px;
+  background: white;   /* 🔥 Change bar color here */
+  top: 10px;
+  left: 50%;
+  transform-origin: center 120px;
+  border-radius: 4px;
+}
+
+.controls {
+  margin-top: 20px;
+}
+
+button {
+  font-size: 20px;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+}
